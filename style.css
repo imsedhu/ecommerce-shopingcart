@@ -6,3 +6,26 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  color: white;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+nav i{
+  font-size: 20px;
+  cursor: pointer;
+}
+nav p{
+  font-size: 20px;
+}
