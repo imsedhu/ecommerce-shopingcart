@@ -11,9 +11,9 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
   background-color: black;
   color: white;
+  z-index: 100;
 }
 nav{
   display: flex;
@@ -21,6 +21,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  height: 30px;
 }
 nav i{
   font-size: 20px;
@@ -28,4 +29,42 @@ nav i{
 }
 nav p{
   font-size: 20px;
+}
+section{
+  padding-block: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration:underline;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.products img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-box{
+  border: .5px solid black;
+  position: relative;
+}
+.product-box p{
+  margin-left: 5px;
+}
+.product-cart-icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  padding: 6px;
+  cursor: pointer;
 }
