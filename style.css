@@ -11,39 +11,52 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
-  color: white;
+  
+  background-color: white;
   z-index: 100;
 }
 nav{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   height: 30px;
 }
 nav i{
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 nav p{
   font-size: 20px;
 }
+
+.add-cart-bar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 385px;
+  height: 100vh;
+  background-color: white;
+}
+.add-cart-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-top: 1.55rem;
+}
 section{
-  padding-block: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 4rem 2rem 1rem 2rem;
 }
 .section-title {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
   text-decoration:underline;
+  margin-bottom: 1.5rem;
 }
 .products{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   grid-gap: 10px;
 }
 .products img{
