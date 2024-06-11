@@ -37,6 +37,7 @@ nav p{
   width: 385px;
   height: 100vh;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .add-cart-title {
   text-align: center;
@@ -47,6 +48,7 @@ nav p{
 .cart-box img{
   width: 60px;
   height: auto;
+  border: 1px solid black;
 }
 .cart-box {
   display: grid;
@@ -54,7 +56,43 @@ nav p{
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+  padding: 10px;
 }
+.cart-quantity{
+  width: 2rem;
+  outline: black;
+}
+.trash-bin{
+  color: red;
+}
+.bottom-line{
+  width: 370px;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  gap: 1rem;
+}
+.close-btn{
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px; 
+  margin-top: 10px;
+  cursor: pointer;
+}
+.buy-now{
+  margin-left: 150px;
+  padding: 8px;
+  border: none;
+  background-color: orangered;
+  color: white;
+}
+.buy-now:hover{
+  border: 2px solid black;
+}
+/* section */
 section{
   padding: 4rem 2rem 1rem 2rem;
 }
