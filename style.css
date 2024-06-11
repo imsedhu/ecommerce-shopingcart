@@ -34,7 +34,7 @@ nav p{
   position: fixed;
   top: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   width: 385px;
   height: 100vh;
   background-color: white;
