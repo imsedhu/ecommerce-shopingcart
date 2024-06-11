@@ -31,4 +31,22 @@ function ready(){
 function removeCartItems(e){
   const btnClicked = e.target;
   btnClicked.parentElement.remove();
+  updatePrice();
+}
+
+/* price total update function */
+function updatePrice(){
+  const cartContent = document.getElementsByClassName('cart-content')[0];
+  const cartBoxes = cartContent.getElementsByClassName('cart-box');
+  var total = 0;
+  for(var i = 0; i < cartBoxes.length; i++){
+    var cartBox = cartBoxes[i]
+    var priceElement = cartBox.getElementsByClassName('cart-price')[0];
+    var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+    var price = parseFloat(priceElement.innerText.replace("$",""));
+    var quantity = quantityElement.ariaValueMax;
+    total = total + (price * quantity);
+
+    document.getElementsByClassName('total-price').innerText = "$" + price;
+  }
 }
