@@ -75,7 +75,9 @@ nav p{
   color: red;
 }
 .bottom-line{
-  width: 370px;
+  width: 400px;
+  height: 1px;
+
 }
 .total{
   display: flex;

@@ -39,6 +39,19 @@ function ready(){
     var button = addCart[i];
     button.addEventListener('click', addCartClicked);
   }
+
+  /* buy button work */
+  document.getElementsByClassName('buy-now')[0].addEventListener('click', buyButtonClicked);
+}
+
+/* buyButtonClicked function */
+function buyButtonClicked(){
+  alert("Your order is placed");
+  var cartContent = document.getElementsByClassName('cart-content')[0];
+  while(cartContent.hasChildNodes()){
+    cartContent.removeChild(cartContent.firstChild);
+  }
+  updatePrice();
 }
 
 /* removeCartItems function*/
@@ -87,7 +100,6 @@ function addProductToCart(title, price, image){
           <input type="number" value="1" class="cart-quantity">
         </div>
         <i class="ri-delete-bin-fill trash-bin"></i>
-      <hr class="bottom-line">
 `;
 cartShopBox.innerHTML = cartBoxContent;
 cartItems.append(cartShopBox);
